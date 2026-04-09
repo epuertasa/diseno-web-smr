@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catàleg | Puertas Editorial S.L.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-cataleg">
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <div class="logo-icon"></div>
+            <span class="logo-text">Cataleg | Puertas Editorial S.L.</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="cataleg.html">Llibres</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section mt-80">
+        <h1 class="section-title">Puertas Editorial S.L</h1>
+
+        <p class="catalog-intro">
+            Benvingut a un espai on les històries prenen vida. Cada llibre de la nostra col·lecció ha estat seleccionat
+            amb rigor per oferir-te una experiència literària única i transformadora. Deixa't seduir per les nostres
+            narratives i selecciona aquelles obres que ressonen amb tu. La teva cesta és el refugi on guardar cada futur
+            viatge abans de fer-lo realitat.
+        </p>
+
+        <!-- 3D Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-input" id="bookSearch" placeholder="Què vols llegir avui?"
+                onkeyup="searchBooks()">
+        </div>
+
+        <ul class="filter-nav">
+            <li><button class="filter-btn active" onclick="filterBooks('tots')">Tots General</button></li>
+            <li><button class="filter-btn" onclick="filterBooks('mangas')">Mangas</button></li>
+            <li><button class="filter-btn" onclick="filterBooks('amor')">Amor</button></li>
+            <li><button class="filter-btn" onclick="filterBooks('comedia')">Comèdia</button></li>
+        </ul>
+
+        <div class="grid" id="book-grid">
+            <!-- MANGAS -->
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img
+                        src="https://imagessl0.casadellibro.com/a/l/s7/90/9788413418490.webp"></div>
+                <div class="book-info">
+                    <h3>Dragon Ball</h3>
+                    <p class="price">12.95 €</p><button class="btn"
+                        onclick="addToCart('Dragon Ball', 12.95, 'https://imagessl0.casadellibro.com/a/l/s7/90/9788413418490.webp')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img src="https://m.media-amazon.com/images/I/71oinfFgliL.jpg"></div>
+                <div class="book-info">
+                    <h3>Naruto 1</h3>
+                    <p class="price">12.95 €</p><button class="btn"
+                        onclick="addToCart('Naruto 1', 12.95, 'https://m.media-amazon.com/images/I/71oinfFgliL.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img
+                        src="https://static.fnac-static.com/multimedia/Images/ES/NR/59/8b/7c/8162137/1540-1.jpg"></div>
+                <div class="book-info">
+                    <h3>One Piece</h3>
+                    <p class="price">12.95 €</p><button class="btn"
+                        onclick="addToCart('One Piece', 12.95, 'https://static.fnac-static.com/multimedia/Images/ES/NR/59/8b/7c/8162137/1540-1.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img src="https://m.media-amazon.com/images/I/81zijlool9L.jpg"></div>
+                <div class="book-info">
+                    <h3>Chainsaw Man</h3>
+                    <p class="price">14.00 €</p><button class="btn"
+                        onclick="addToCart('Chainsaw Man', 14.00, 'https://m.media-amazon.com/images/I/81zijlool9L.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJf_jrgmTMgQWjDiJAKcv12lY1p1VbJVvRCA&s">
+                </div>
+                <div class="book-info">
+                    <h3>Spy x Family</h3>
+                    <p class="price">13.95 €</p><button class="btn"
+                        onclick="addToCart('Spy x Family', 13.95, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJf_jrgmTMgQWjDiJAKcv12lY1p1VbJVvRCA&s')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img
+                        src="https://www.normaeditorial.com/upload/media/albumes/0001/07/9b1d37c0c634d9c3b88121e3ac6e7e9921128d0c.jpeg">
+                </div>
+                <div class="book-info">
+                    <h3>Jujutsu Kaisen</h3>
+                    <p class="price">12.95 €</p><button class="btn"
+                        onclick="addToCart('Jujutsu Kaisen', 12.95, 'https://www.normaeditorial.com/upload/media/albumes/0001/07/9b1d37c0c634d9c3b88121e3ac6e7e9921128d0c.jpeg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img
+                        src="https://www.normaeditorial.com/upload/media/albumes/0001/05/912566e9eb12f76767469912a8f728a724cdd3a8.jpeg">
+                </div>
+                <div class="book-info">
+                    <h3>Death Note</h3>
+                    <p class="price">15.00 €</p><button class="btn"
+                        onclick="addToCart('Death Note', 15.00, 'https://www.normaeditorial.com/upload/media/albumes/0001/05/912566e9eb12f76767469912a8f728a724cdd3a8.jpeg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img src="https://m.media-amazon.com/images/I/71kxBGpkYpL.jpg"></div>
+                <div class="book-info">
+                    <h3>Attack on Titan</h3>
+                    <p class="price">12.95 €</p><button class="btn"
+                        onclick="addToCart('Attack on Titan', 12.95, 'https://m.media-amazon.com/images/I/71kxBGpkYpL.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img src="https://m.media-amazon.com/images/I/61s2nF5TMVL.jpg"></div>
+                <div class="book-info">
+                    <h3>My Hero Academia</h3>
+                    <p class="price">12.95 €</p><button class="btn"
+                        onclick="addToCart('My Hero Academia', 12.95, 'https://m.media-amazon.com/images/I/61s2nF5TMVL.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="mangas">
+                <div class="book-img-container"><img
+                        src="https://www.normaeditorial.com/upload/media/albumes/0001/05/6e4b41dbac114fe8cf1d7cd10aa14380d0c9303a.jpeg">
+                </div>
+                <div class="book-info">
+                    <h3>Tokyo Ghoul</h3>
+                    <p class="price">16.00 €</p><button class="btn"
+                        onclick="addToCart('Tokyo Ghoul', 16.00, 'https://www.normaeditorial.com/upload/media/albumes/0001/05/6e4b41dbac114fe8cf1d7cd10aa14380d0c9303a.jpeg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+
+            <!-- AMOR -->
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://www.puertadetannhauser.es/imagenes/9788408/978840828895.webp"></div>
+                <div class="book-info">
+                    <h3>It Ends With Us</h3>
+                    <p class="price">18.50 €</p><button class="btn"
+                        onclick="addToCart('It Ends With Us', 18.50, 'https://www.puertadetannhauser.es/imagenes/9788408/978840828895.webp')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/81oXo+oCvJL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Sota la Mateixa Estrella</h3>
+                    <p class="price">16.00 €</p><button class="btn"
+                        onclick="addToCart('Sota la Mateixa Estrella', 16.00, 'https://m.media-amazon.com/images/I/81oXo+oCvJL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://imagessl2.casadellibro.com/a/l/s7/42/9788467045642.webp"></div>
+                <div class="book-info">
+                    <h3>Orgull i Prejudici</h3>
+                    <p class="price">19.90 €</p><button class="btn"
+                        onclick="addToCart('Orgull i Prejudici', 19.90, 'https://imagessl2.casadellibro.com/a/l/s7/42/9788467045642.webp')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/61E63u017tL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Ugly Love</h3>
+                    <p class="price">17.50 €</p><button class="btn"
+                        onclick="addToCart('Ugly Love', 17.50, 'https://m.media-amazon.com/images/I/61E63u017tL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71QDhHvv7wL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Love Hypothesis</h3>
+                    <p class="price">17.00 €</p><button class="btn"
+                        onclick="addToCart('Love Hypothesis', 17.00, 'https://m.media-amazon.com/images/I/71QDhHvv7wL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/51UMvYnATPL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Book Lovers</h3>
+                    <p class="price">18.00 €</p><button class="btn"
+                        onclick="addToCart('Book Lovers', 18.00, 'https://m.media-amazon.com/images/I/51UMvYnATPL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71IWAXP06kL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Verity</h3>
+                    <p class="price">19.00 €</p><button class="btn"
+                        onclick="addToCart('Verity', 19.00, 'https://m.media-amazon.com/images/I/71IWAXP06kL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71PNVvlGhgL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Normal People</h3>
+                    <p class="price">16.50 €</p><button class="btn"
+                        onclick="addToCart('Normal People', 16.50, 'https://m.media-amazon.com/images/I/71PNVvlGhgL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71PCPvxi5GL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Call me by your name</h3>
+                    <p class="price">20.00 €</p><button class="btn"
+                        onclick="addToCart('Call me by your name', 20.00, 'https://m.media-amazon.com/images/I/71PCPvxi5GL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="amor">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/6162kLaTZfL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>November 9</h3>
+                    <p class="price">17.80 €</p><button class="btn"
+                        onclick="addToCart('November 9', 17.80, 'https://m.media-amazon.com/images/I/6162kLaTZfL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+
+            <!-- COMEDIA -->
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://cms.anagrama-ed.es/uploads/media/portadas/0001/23/b8f4708a995f1138942b0062ff792efe842d4d0c.jpeg">
+                </div>
+                <div class="book-info">
+                    <h3>Guia Galàctica</h3>
+                    <p class="price">15.00 €</p><button class="btn"
+                        onclick="addToCart('Guia Galàctica', 15.00, 'https://cms.anagrama-ed.es/uploads/media/portadas/0001/23/b8f4708a995f1138942b0062ff792efe842d4d0c.jpeg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfUbD44QpKooUSyYeDAkcAoZjZ_o30s5Oy4Q&s">
+                </div>
+                <div class="book-info">
+                    <h3>Don Quijote</h3>
+                    <p class="price">45.00 €</p><button class="btn"
+                        onclick="addToCart('Don Quijote', 45.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfUbD44QpKooUSyYeDAkcAoZjZ_o30s5Oy4Q&s')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/81hu5ioEWhL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Catch-22</h3>
+                    <p class="price">14.50 €</p><button class="btn"
+                        onclick="addToCart('Catch-22', 14.50, 'https://m.media-amazon.com/images/I/81hu5ioEWhL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img src="https://m.media-amazon.com/images/I/61aRyNjHN9L.jpg"></div>
+                <div class="book-info">
+                    <h3>Good Omens</h3>
+                    <p class="price">18.00 €</p><button class="btn"
+                        onclick="addToCart('Good Omens', 18.00, 'https://m.media-amazon.com/images/I/61aRyNjHN9L.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71INFjey59L._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Bridget Jones</h3>
+                    <p class="price">13.00 €</p><button class="btn"
+                        onclick="addToCart('Bridget Jones', 13.00, 'https://m.media-amazon.com/images/I/71INFjey59L._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71iCUnY11ML._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Three Men in a Boat</h3>
+                    <p class="price">12.00 €</p><button class="btn"
+                        onclick="addToCart('Three Men in a Boat', 12.00, 'https://m.media-amazon.com/images/I/71iCUnY11ML._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/81eYtyuk8yL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Confederacy of Dunces</h3>
+                    <p class="price">16.00 €</p><button class="btn"
+                        onclick="addToCart('Confederacy of Dunces', 16.00, 'https://m.media-amazon.com/images/I/81eYtyuk8yL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://lallamastore.com/cdn/shop/products/P1090138.jpg?v=1571609975"></div>
+                <div class="book-info">
+                    <h3>Bossypants</h3>
+                    <p class="price">14.00 €</p><button class="btn"
+                        onclick="addToCart('Bossypants', 14.00, 'https://lallamastore.com/cdn/shop/products/P1090138.jpg?v=1571609975')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img
+                        src="https://m.media-amazon.com/images/I/71hcXQJbVEL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="book-info">
+                    <h3>Me Talk Pretty One Day</h3>
+                    <p class="price">15.50 €</p><button class="btn"
+                        onclick="addToCart('Me Talk Pretty One Day', 15.50, 'https://m.media-amazon.com/images/I/71hcXQJbVEL._AC_UF1000,1000_QL80_.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+            <div class="book-card" data-category="comedia">
+                <div class="book-img-container"><img src="https://m.media-amazon.com/images/I/91ya4K342ZL.jpg"></div>
+                <div class="book-info">
+                    <h3>The Sellout</h3>
+                    <p class="price">17.00 €</p><button class="btn"
+                        onclick="addToCart('The Sellout', 17.00, 'https://m.media-amazon.com/images/I/91ya4K342ZL.jpg')">Afegir
+                        a la cesta</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8rem">
+            <h2 class="section-title">Enviament i Condicions</h2>
+            <p class="shipping-badge">ENVIAMENT GRATUÏT A PARTIR DE 50€</p>
+            <p class="shipping-desc">
+                Per a comandes inferiors a 50€, s'aplicarà una tarifa base segons la teva ubicació. Treballem amb les
+                millors agències per assegurar que el teu llibre arribi en perfecte estat.
+            </p>
+        </div>
+
+        <table class="shipping-table">
+            <thead>
+                <tr>
+                    <th>Lloc</th>
+                    <th>Quan triga</th>
+                    <th>Preu < 50€</th>
+                    <th>Preu > 50€</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Catalunya</td>
+                    <td>24/48h</td>
+                    <td>3.95 €</td>
+                    <td class="text-accent">GRATIS</td>
+                </tr>
+                <tr>
+                    <td>Península</td>
+                    <td>2-3 dies</td>
+                    <td>5.50 €</td>
+                    <td class="text-accent">GRATIS</td>
+                </tr>
+                <tr>
+                    <td>Europa</td>
+                    <td>1 setmana</td>
+                    <td>12.00 €</td>
+                    <td>8.00 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- RGPD Summary -->
+        <section class="legal-section">
+            <h3 class="legal-title">Protecció de Dades (RGPD)</h3>
+            <p>D'acord amb el Reglament General de Protecció de Dades (RGPD), t'informem que les teves dades seran
+                tractades per <strong>Arxiu Puertas Editorial</strong> amb l'única finalitat de gestionar les teves
+                comandes i consultes. Tens dret d'accés, rectificació i cancel·lació de les mateixes enviant un correu a
+                l'atenció del CEO.</p>
+        </section>
+    </main>
+
+    <!-- Shopping Cart UI -->
+    <button class="cart-trigger" onclick="toggleCart()">
+        <span class="cart-icon">🛒</span>
+        <div class="cart-count" id="cartCount">0</div>
+    </button>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>La teva Cesta</h2>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be injected here -->
+            <p class="text-center" style="opacity: 0.5; margin-top: 2rem;">La cesta està buida</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">0.00 €</span>
+            </div>
+            <button class="buy-btn" onclick="checkout()">Finalitzar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Arxiu Puertas Editorial S.L.</strong></p>
+            <p>CEO: Erik Puertas Amaral</p>
+            <p class="footer-legal">&copy; 2026 Tots els drets reservats. <a href="#" class="footer-link">Privacitat</a>
+                | <a href="#" class="footer-link">Cookies</a></p>
+        </div>
+    </footer>
+
+    <script>
+        let cart = [];
+
+        function filterBooks(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('onclick').includes(category)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            const books = document.querySelectorAll('.book-card');
+            books.forEach(book => {
+                book.style.display = 'none';
+                if (category === 'tots' || book.getAttribute('data-category') === category) {
+                    book.style.display = 'block';
+                    book.style.animation = 'none';
+                    book.offsetHeight;
+                    book.style.animation = 'fadeIn 0.8s ease';
+                }
+            });
+        }
+
+        function searchBooks() {
+            const query = document.getElementById('bookSearch').value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+
+            books.forEach(book => {
+                const title = book.querySelector('h3').innerText.toLowerCase();
+                if (title.includes(query)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleCart() {
+            document.getElementById('cartSidebar').classList.toggle('active');
+        }
+
+        function addToCart(name, price, img) {
+            cart.push({ name, price, img });
+            updateCart();
+            // Show cart briefly
+            if (!document.getElementById('cartSidebar').classList.contains('active')) {
+                toggleCart();
+            }
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartCount = document.getElementById('cartCount');
+            const cartTotal = document.getElementById('cartTotal');
+
+            cartCount.innerText = cart.length;
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-center" style="opacity: 0.5; margin-top: 2rem;">La cesta està buida</p>';
+                cartTotal.innerText = '0.00 €';
+                return;
+            }
+
+            let total = 0;
+            cartItems.innerHTML = '';
+            cart.forEach((item, index) => {
+                total += item.price;
+                cartItems.innerHTML += `
+                    <div class="cart-item">
+                        <img src="${item.img}" alt="${item.name}">
+                        <div class="cart-item-info">
+                            <h4>${item.name}</h4>
+                            <p>${item.price.toFixed(2)} €</p>
+                        </div>
+                        <button class="remove-item" onclick="removeFromCart(${index})">Eliminar</button>
+                    </div>
+                `;
+            });
+            cartTotal.innerText = total.toFixed(2) + ' €';
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert('La cesta està buida!');
+                return;
+            }
+            alert('Gràcies per la seva compra a L\'Arxiu de l\'Erik! El seu pedido s\'està processant.');
+            cart = [];
+            updateCart();
+            toggleCart();
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacte | Puertas Editorial S.L</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-attachment: fixed;">
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <div class="logo-icon"></div>
+            <span class="logo-text">Contacte | Puertas Editorial S.L.</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="cataleg.html">Llibres</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section"
+        style="margin-top: 80px; min-height: 80vh; display: flex; align-items: center; justify-content: center;">
+        <div class="contact-container" style="background: rgba(26, 26, 26, 0.95); backdrop-filter: blur(10px);">
+            <h1 class="section-title">Parlem?</h1>
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 2rem;">Si tens qualsevol dubte o només
+                vols saludar, em pots escriure aquí mateix.</p>
+
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Com et dius?</label>
+                    <input type="text" id="name" class="form-input" placeholder="El teu nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">El teu correu</label>
+                    <input type="email" id="email" class="form-input" placeholder="exemple@correu.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Què em vols dir?</label>
+                    <textarea id="message" class="form-input" rows="5" placeholder="Escriu aquí el que vulguis..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Envia-ho</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Arxiu Puertas Editorial S.L.</strong></p>
+            <p>CEO: Erik Puertas Amaral</p>
+            <p class="footer-legal">&copy; 2026 Tots els drets reservats. <a href="#" class="footer-link">Privacitat</a>
+                | <a href="#" class="footer-link">Cookies</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
