@@ -1,13 +1,13 @@
-# Proyectos de Diseño Web - SMR
+# Proyectos de Diseño Web
 
-¡Hola! Soy **Erik**, estudiante de Sistemas Microinformáticos y Redes (SMR). Este repositorio contiene mis proyectos y prácticas enfocadas al desarrollo y diseño web front-end.
+¡Hola! Soy **Erik**, estudiante de Sistemas Microinformáticos y Redes. Este repositorio contiene mis proyectos y prácticas enfocadas al desarrollo y diseño web front-end.
 
 ## 🚀 Proyectos Incluidos
 
 ### 1. Activitat Lloc Web
 Un proyecto enfocado en la estructura y diseño de sitios web funcionales. 
 * **Tecnologías:** HTML5, CSS3.
-* **Objetivo:** Crear una interfaz intuitiva y adaptativa (Responsive Design).
+* **Objetivo:** Crear una interfaz intuitiva y adaptativa.
 
 ### 2. Practica4
 Práctica de consolidación de conceptos de diseño y maquetación avanzada.
