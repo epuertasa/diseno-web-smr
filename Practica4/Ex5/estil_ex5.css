@@ -1,0 +1,143 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #0d1117;
+}
+
+body {
+    background-color: #0b0e14;
+    color: #e2e8f0;
+}
+
+.parallax {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/parallax_bg.png");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    padding: 60px 10%;
+    background-color: rgba(20, 24, 35, 0.95);
+}
+
+h1 {
+    color: blue;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+h5 {
+    color: orange;
+    font-family: monospace;
+    text-align: right;
+    margin-top: 60px;
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+}
+
+p {
+    font-size: medium;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.planet-main-img {
+    display: block;
+    width: 40%; 
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px auto 50px;
+    border: 6px solid #e67e22;
+    box-shadow: 0 0 40px rgba(230, 126, 34, 0.5);
+    animation: rotarPlaneta 60s linear infinite;
+}
+
+@keyframes rotarPlaneta {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+b, strong {
+    color: blue;
+    text-decoration: overline;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.gallery-container img {
+    flex: 1;
+    min-width: 250px;
+    max-width: 32%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #444;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    border-color: #e67e22;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+ol li {
+    margin-bottom: 15px;
+}
+
+table {
+    caption-side: top;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px 0;
+    background: rgba(255,255,255,0.02);
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px;
+    text-align: center;
+    color: #f39c12;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 25px;
+    text-align: left;
+}
+
+th {
+    background-color: #1c232b;
+}
